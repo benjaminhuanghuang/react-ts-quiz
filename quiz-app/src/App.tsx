@@ -24,6 +24,7 @@ const App: React.FC = () => {
   const [score, setScore] = useState(0);
   const [gameOver, setGameOver] = useState(true);
 
+  
   const startTrivia = async () => {
     setLoading(true);
     setGameOver(false);
@@ -35,7 +36,7 @@ const App: React.FC = () => {
     setLoading(false);
   };
 
-  const checkAnswer = (e: any) => {
+  const checkAnswer = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (!gameOver) {
       // User's answer
       const answer = e.currentTarget.value;

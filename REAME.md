@@ -26,6 +26,12 @@ https://opentdb.com/api.php?amount=10
 
 
 ## Logic
+startATrivia
+
+chackAnswer(e: React.MouseEvent<HTMLButtonElement>)
+
+nextQuestion
+
 
 
 
